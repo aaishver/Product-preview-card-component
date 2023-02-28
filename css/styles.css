@@ -1,0 +1,125 @@
+
+/* tags section */
+
+body{
+    padding-top: min(85%,6rem);
+    background-color: hsl(30, 38%, 92%);
+}
+h1{
+    font-family: 'Fraunces', serif;
+}
+p{
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px ;
+    color: grey;
+}
+p, h1{
+    padding: 0 2rem 0 5rem;
+}
+header img{
+    border-radius: 0.7rem 0 0 0.7rem ;
+    width: min(120%,700px);
+}
+button{
+    margin: 0 2rem 0 5rem;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    cursor: pointer;
+    padding: 0 3rem 0 0rem;
+    border-radius: 10px;
+}
+button p{
+    color: white;
+}
+button img{
+    margin: 0 0.5rem;
+}
+footer{
+    margin-top: 2rem;
+}
+
+/* container section and class*/
+
+.container{
+    margin-inline: auto;
+    text-align: left;
+    display: flex;
+    background-color: white;
+    border-radius: 0.7rem;
+    width: min(100%,670px);
+}
+.price-container{
+    display: flex;
+}
+.image-perfume1{
+    display: none;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+/* ids section */
+
+#product{
+    margin-top: 2rem;
+}
+#price{
+    color:  hsl(158, 36%, 37%);
+    padding: 0 2rem 0 5rem;
+}
+#real-price{
+    padding: 0 0;
+    text-decoration: line-through;
+    font-weight: 700;
+}
+
+
+@media (max-width:650px){
+    header img{
+        border-radius: 0.7rem 0.7rem 0 0;
+        width: min(100%,350px);
+    }
+    p, h1, #price{
+        padding: 0 2rem 0 1rem;
+    }
+    button{
+        margin: 0rem 1rem 1rem 1rem;
+        padding: 0rem 3rem 0rem 3rem;
+    }
+    body{
+        padding: 1rem 0.3rem;
+    }
+    
+    .image-perfume1{
+        display:block ;
+    }
+    .image-perfume{
+        display: none;
+    }
+    .container{
+        /* margin: 0 1rem 1rem 1rem; */
+        display: block;
+        width: min(100%,350px);
+    }
+
+    #product{
+        margin: 1rem 0 ;
+    }
+    #product-name{
+        margin: 0;
+    }
+   
+    
+}
+@media (max-width:330px){
+    body{
+        padding: 1rem 0;
+    }
+}
